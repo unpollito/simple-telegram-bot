@@ -34,8 +34,9 @@ pub struct TelegramMessageFrom {
 #[derive(Debug, Deserialize, Serialize)]
 pub struct TelegramMessageChat {
     pub id: i64,
-    pub first_name: String,
-    pub username: String,
+    pub first_name: Option<String>,
+    pub username: Option<String>,
+    pub title: Option<String>,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
