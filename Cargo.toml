@@ -1,0 +1,12 @@
+[package]
+name = "simple-telegram-bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+reqwest = { version = "0.11.10", features = ["blocking", "json"] }
+serde = { version = "1.0.137", features = ["derive"] }
+tokio = { version = "1.18.2", features = ["full"] }
