@@ -9,7 +9,7 @@ pub struct TelegramUpdatesResponse {
 #[derive(Debug, Deserialize, Serialize)]
 pub struct TelegramUpdate {
     pub update_id: i64,
-    pub message: TelegramMessage,
+    pub message: Option<TelegramMessage>,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
